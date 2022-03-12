@@ -74,6 +74,9 @@ li a:hover {
 li a:active {
   color: #40b8c4;
 }
+.hero_content h1 {
+  margin-top: 2rem;
+}
 .button {
   border: #40b8c4 solid 1px;
   border-radius: 0.5em;
@@ -90,7 +93,7 @@ li a:active {
 .hero_img {
   max-width: 300px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 /* Header ends */
 
@@ -126,5 +129,33 @@ li a:active {
   margin-top: 2rem;
   margin-bottom: 0;
 }
-
+.logo_sign {
+  margin-top: 2rem;
+  max-width: 60px;
+}
+.laptop {
+  width: 80%;
+  margin-top: 1rem;
+}
 /* Main section ends */
+
+/* Footer starts */
+footer {
+  background-color: #057f8b;
+  color: #fff;
+  font-size: 0.7rem;
+}
+.footer_logo {
+  width: 200px;
+  margin-top: 1rem;
+}
+.footer_company p {
+  font-style: italic;
+  color: rgb(196, 196, 196);
+  margin-bottom: 2rem;
+}
+.footer_bottom {
+  border-top: rgb(196, 196, 196) solid 1px;
+}
+
+/* Footer ends */
