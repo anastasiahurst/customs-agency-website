@@ -1,3 +1,4 @@
+/* General rules start */
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -8,20 +9,18 @@ img {
 }
 body h1 {
   font-weight: 800;
-  color: FFF;
 }
 body h2 {
   font-weight: 800;
-  color: FFF;
 }
 body p {
-  font-weight: 300;
-  color: #efefef;
-  font-size: 1rem;
+  font-weight: 400;
 }
 .container {
   width: 80%;
   margin: 0 auto;
+  padding-top: 1%;
+  padding-bottom: 3%;
 }
 .dark {
   background-color: #414141;
@@ -31,24 +30,27 @@ body p {
   background-color: #efefef;
   color: #414141;
 }
+/* General rules end */
+
 /* Header starts */
-header {
-  box-shadow: 0px 20px 50px 50px rgb(31, 29, 29);
+header p {
+  margin-bottom: 30px;
+  color: #cac9c9;
 }
 .nav {
   display: flex;
+  flex-direction: column;
   align-items: center;
   border-bottom: #efefef solid 1px;
-  min-height: 60px;
 }
 .logo {
-  flex: 0 1 10%;
-  max-width: 50px;
+  flex: 0 1 60%;
+  max-width: 200px;
   padding: 5px 0;
 }
 .menu {
-  flex: 1 1 60%;
-  text-align: end;
+  flex: 1 1 100%;
+  text-align: center;
 }
 ul {
   list-style-type: none;
@@ -57,25 +59,72 @@ ul {
 }
 li {
   display: inline-block;
-  margin-left: 2rem;
+  margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+  padding: 0.2rem 0.6rem;
 }
 li a {
   text-decoration: none;
 }
-li a:hover {
-  color: #fefef;
-}
-li a:active {
-  color: #efefef;
-}
 li a:visited {
   color: #efefef;
 }
+li a:hover {
+  color: #40b8c4;
+}
+li a:active {
+  color: #40b8c4;
+}
 .button {
+  border: #40b8c4 solid 1px;
+  border-radius: 0.5em;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #efefef;
+  padding: 0.5rem 2rem;
+  border-radius: 0.6rem;
+}
+.button:hover {
+  background-color: #40b8c4;
+  color: #414141;
 }
 .hero_img {
   max-width: 300px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 /* Header ends */
+
+/* Main section  starts */
+.completing_doc_img {
+  max-width: 150px;
+}
+.box {
+  width: 80%;
+  margin: 3.5rem auto;
+  background-color: #efefef;
+  border-radius: 1rem;
+  color: #414141;
+  padding: 1rem;
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.circle {
+  background-color: #40b8c4;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -30px;
+}
+.box_title {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* Main section ends */
