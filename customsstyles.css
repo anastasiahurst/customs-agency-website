@@ -1,0 +1,355 @@
+/* General rules start */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+body h1 {
+  font-weight: 800;
+}
+body h2 {
+  font-weight: 800;
+}
+body p {
+  font-weight: 400;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+.dark {
+  background-color: #414141;
+  color: #efefef;
+}
+.light {
+  background-color: #efefef;
+  color: #414141;
+}
+/* General rules end */
+
+/* Header starts */
+header p {
+  margin-bottom: 30px;
+  color: #cac9c9;
+}
+.nav {
+  border-bottom: #efefef solid 1px;
+}
+.logo {
+  min-width: 200px;
+  max-width: 250px;
+  padding: 5px 0;
+  margin: 0 auto;
+}
+.menu {
+  margin: 0 auto;
+  padding-left: 0;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+li {
+  display: inline-block;
+  margin: 0.2rem 1rem;
+}
+li a {
+  text-decoration: none;
+}
+li a:visited {
+  color: #efefef;
+}
+li a:hover {
+  color: #40b8c4;
+}
+li a:active {
+  color: #40b8c4;
+}
+
+.hero_content h1 {
+  margin-top: 2rem;
+}
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #efefef;
+  padding: 0.5rem 2rem;
+  border-radius: 0.6rem;
+  outline: #40b8c4 1px solid;
+  -moz-outline-radius: 0.5em;
+  outline-offset: 0.5rem 0.2rem;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+.button:hover {
+  outline-color: rgba(71, 126, 232, 0);
+  outline-offset: 300px;
+  font-weight: 500;
+  border-radius: 0.5em;
+  background-color: #40b8c4;
+  color: #414141;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.541);
+}
+.hero_img {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+/* Header ends */
+
+/* Main section  starts */
+.completing_doc_img {
+  max-width: 150px;
+}
+.box {
+  width: 80%;
+  max-width: 360px;
+  margin: 3.5rem auto;
+  background-color: #efefef;
+  border-radius: 1rem;
+  color: #414141;
+  padding: 1rem;
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.circle {
+  background-color: #40b8c4;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -30px;
+}
+.box_title {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.logo_sign {
+  margin-top: 2rem;
+  max-width: 60px;
+}
+.laptop {
+  width: 80%;
+  min-width: 251px;
+  margin-top: 1rem;
+}
+.contact_box {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  box-shadow: 12px 6px 0px 0px #88eaf3;
+}
+.submission_container {
+  padding: 1rem;
+}
+.email_box {
+  display: flex;
+  margin: 0 auto;
+  border: rgb(202, 202, 204) solid 1px;
+}
+.email_img {
+  flex: 0 0 30px;
+}
+.email_input {
+  flex: 1 1 auto;
+  border: none;
+  outline: none;
+}
+.chat_button_div {
+  margin-top: 1.5rem;
+}
+.button_dark {
+  color: #414141;
+  font-size: 0.8rem;
+}
+/* Main section ends */
+
+/* Footer starts */
+footer {
+  background-color: #057f8b;
+  color: #fff;
+  font-size: 0.7rem;
+}
+.footer_logo {
+  width: 200px;
+  margin-top: 1rem;
+}
+.footer_company p {
+  font-style: italic;
+  color: rgb(196, 196, 196);
+  margin-bottom: 2rem;
+}
+.footer_bottom {
+  border-top: rgb(196, 196, 196) solid 1px;
+}
+/* Footer ends */
+
+@media (min-width: 800px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  /* Header starts */
+  .nav {
+    border-bottom: #efefef solid 1px;
+    display: flex;
+  }
+  .logo {
+    flex: 1 0 30%;
+    min-width: 200px;
+    padding: 5px 0;
+    margin: 0 auto;
+  }
+  .menu {
+    flex: 1 1 60%;
+    display: flex;
+    justify-content: end;
+  }
+  li {
+    padding: 0.2rem 0rem 0.2rem 0.6rem;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero_content {
+    flex: 1 1 60%;
+    text-align: left;
+    max-width: 600px;
+    margin-right: 5%;
+    padding: 10% 0%;
+    /* border: red solid 1px; */
+  }
+  .hero_content p {
+    margin: 5% 0% 8% 0%;
+  }
+  .hero_img {
+    flex: 1 1 30%;
+    max-width: 400px;
+    margin-right: 0;
+    /* border: green solid 1px; */
+  }
+  /* Header ends */
+
+  /* Light 'Who we are' section starts */
+  .row_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: end;
+    justify-content: space-between;
+  }
+  .who_we_are_content {
+    flex: 1 1 70%;
+    max-width: 700px;
+    padding: 7% 0% 12% 0%;
+    /* border: blue solid 1px; */
+  }
+  .completing_docs {
+    flex: 1 1 20%;
+    max-width: 250px;
+    align-self: flex-end;
+    margin-right: 5%;
+    /* border: red solid 1px; */
+  }
+  .completing_doc_img {
+    max-width: 100%;
+    /* border: green solid 1px; */
+  }
+  /* Light 'Who we are' section ends */
+
+  /* 'What we offer' section with boxes starts */
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: red solid 1px; */
+  }
+  .box {
+    flex: 0 0 25%;
+    min-width: 250px;
+    /* width: 27%;
+    max-width: 360px;
+    min-width: 250px; */
+    margin: 3.5rem auto 1.7rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  /* 'What we offer' section with boxes ends */
+
+  /* 'Extra mile' section starts */
+  .row {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+  .extra_mile_content {
+    flex: 1 1 70%;
+    max-width: 700px;
+    padding: 7% 0% 12% 0%;
+    /* border: blue solid 1px; */
+  }
+  .laptop_container {
+    flex: 1 1 27%;
+    max-width: 450px;
+    align-self: flex-end;
+    /* border: red solid 1px; */
+  }
+  .laptop {
+    width: 100%;
+  }
+  /* 'Extra mile' section ends */
+
+  .lets_chat_title {
+    margin-top: 3rem;
+  }
+  .contact_box {
+    margin-top: 3rem;
+    max-width: 600px;
+  }
+
+  /* Footer starts */
+  .footer_top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_company {
+    text-align: left;
+  }
+  .footer_contact {
+    text-align: end;
+  }
+
+  .footer_bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  .terms_privacy {
+    display: flex;
+  }
+  .terms_privacy a {
+    margin-left: 2rem;
+  }
+}
+
+/* 1146px breakpoint was where layout stoped working well, hence was set as a separate point */
+@media (min-width: 1146px) {
+  .hero_content h1 {
+    font-size: 2.5rem;
+  }
+}
